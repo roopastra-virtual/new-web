@@ -2,7 +2,7 @@
     "name": "project-r",
     "version": "1.0.0",
     "author": "",
-    "homepage": "https://themewagon.github.io/FaunaFlora",
+    "homepage": "https://roopastra-virtual.github.io/new-web",
     "description": "",
     "scripts": {
         "predeploy": "npm run build",
