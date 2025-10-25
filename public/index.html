@@ -14,7 +14,7 @@
     <div>
       <div></div>
       <div>
-        <section class="relative bg-gradient-to-r from-purple-500 via-fuchsia-300 to-sky-300 bg-[length:400%_400%] animate-gradient min-h-screen " x-data="{ mobileNavOpen: false }"><img class="absolute top-0 left-0 w-full h-full" src="fauna-assets/headers/bg-waves.png" alt=""/>
+        <section class="min-h-screen bg-[linear-gradient(to_right,theme(colors.purple.500),theme(colors.fuchsia.300),theme(colors.slate.950),theme(colors.sky.300))] bg-[length:400%_400%] animate-gradient" x-data="{ mobileNavOpen: false }"><img class="absolute top-0 left-0 w-full h-full" src="fauna-assets/headers/bg-waves.png" alt=""/>
           <nav class="py-6">
             <div class="container mx-auto px-4">
               <div class="relative flex items-center justify-between"><a class="inline-block" href="#!"><img class="h-8" src="images/logo-black-r.png" alt=""/></a>
@@ -303,13 +303,6 @@
             </button>
             <div class="sm:flex py-10 px-5 sm:px-10 bg-[#778da9] rounded-2xl">
               <div class="mb-4 sm:mb-0 sm:mr-6">
-                <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 8C0 3.58172 3.58172 0 8 0H40C44.4183 0 48 3.58172 48 8V40C48 44.4183 44.4183 48 40 48H8C3.58172 48 0 44.4183 0 40V8Z" fill="#FFFFFF"></path>
-                  <path d="M13.676 15.5617C11.7951 17.8602 10.6666 20.7983 10.6666 24C10.6666 27.2017 11.7951 30.1398 13.6761 32.4383L18.9201 27.1943C18.3372 26.2694 18 25.174 18 24C18 22.8259 18.3372 21.7306 18.92 20.8057L13.676 15.5617Z" fill="#022C22"></path>
-                  <path d="M15.5616 13.6761L20.8056 18.9201C21.7306 18.3372 22.8259 18 24 18C25.174 18 26.2694 18.3372 27.1943 18.9201L32.4383 13.6761C30.1398 11.7951 27.2017 10.6666 24 10.6666C20.7982 10.6666 17.8601 11.7951 15.5616 13.6761Z" fill="#022C22"></path>
-                  <path d="M34.3239 15.5617L29.0799 20.8057C29.6628 21.7307 30 22.8259 30 24C30 25.174 29.6627 26.2693 29.0799 27.1943L34.3238 32.4383C36.2048 30.1398 37.3333 27.2017 37.3333 24C37.3333 20.7983 36.2048 17.8602 34.3239 15.5617Z" fill="#022C22"></path>
-                  <path d="M32.4382 34.3239L27.1942 29.0799C26.2693 29.6628 25.174 30 24 30C22.8259 30 21.7307 29.6628 20.8057 29.0799L15.5617 34.3239C17.8602 36.2048 20.7983 37.3333 24 37.3333C27.2016 37.3333 30.1397 36.2048 32.4382 34.3239Z" fill="#022C22"></path>
-                </svg>
                 <div></div>
                 <h5 class="text-xl font-medium mb-4">Still have queries ?</h5>
                 <p class="text-[#ffffff]"><span>For assistance, please visit our</span> <a class="inline-block text-black font-medium underline" href="mailto:info@roopastra.com">Contact Us</a> <span> Our dedicated team is ready to help you on your journey to experience seamless virtual try on.</span></p>
@@ -318,46 +311,6 @@
           </div>
         </div>
       </section>
-      <!--section(x-data="{ activeSlide: 1, slideCount: 3 }" class="py-12 lg:py-24 overflow-hidden")
-      div(class="container mx-auto px-4")
-        div(class="flex flex-wrap items-center -mx-4")
-          div(class="w-full md:w-1/2 px-4 mb-12 md:mb-0")
-            div(class="max-w-lg mx-auto md:mx-0 overflow-hidden")
-              div(:style="'transform: translateX(-' + (activeSlide - 1) * 100 + '%)'" class="flex -mx-4 transition-transform duration-500")
-                //img(class="block flex-shrink-0 w-full px-4" src="roopastra/image-7.png" alt="")
-                img(class="block flex-shrink-0 w-full px-4 rounded-2xl" src="roopastra/image-7.png" alt="")
-                img(class="block rounded-2xl flex-shrink-0 w-full px-4 rounded-2xl" src="roopastra/image-6.png" alt="")
-                img(class="block flex-shrink-0 w-full px-4 rounded-2xl" src="roopastra/image-1.jpeg" alt="")
-          div(class="w-full md:w-1/2 px-4")
-            div(class="max-w-lg mx-auto md:mr-0 overflow-hidden")
-              div(:style="'transform: translateX(-' + (activeSlide - 1) * 100 + '%)'" class="flex -mx-4 transition-transform duration-500")
-                div(class="flex-shrink-0 px-4 w-full")
-                  h4(class="text-3xl lg:text-4xl font-medium mb-10") “Flow transformed my energy use. Efficient, green tech, outstanding service!”
-                  span(class="block text-xl font-medium") Jenny Wilson
-                  |                                       
-                  span(class="block mb-12 lg:mb-32 text-lg text-gray-700") Solar energy service
-                div(class="flex-shrink-0 px-4 w-full")
-                  h4(class="text-3xl lg:text-4xl font-medium mb-10") “Efficient, green tech, outstanding service”
-                  span(class="block text-xl font-medium") John Jones
-                  |                                       
-                  span(class="block mb-12 lg:mb-32 text-lg text-gray-700") CE0 Solar Company
-                div(class="flex-shrink-0 px-4 w-full")
-                  h4(class="text-3xl lg:text-4xl font-medium mb-10") “Flow transformed my energy use, efficient, green tech, outstanding service.”
-                  span(class="block text-xl font-medium") James Harrison
-                  |                                       
-                  span(class="block mb-12 lg:mb-32 text-lg text-gray-700") Developer
-              div
-                button(x-on:click="activeSlide = activeSlide > 1 ? activeSlide - 1 : slideCount" class="inline-block mr-4 text-gray-700 hover:text-lime-500")
-                  svg(width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg")
-                    path(d="M24.4 16H7.59998" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round")
-                    path(d="M16 24.4L7.59998 16L16 7.59998" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round")
-                button(x-on:click="activeSlide = activeSlide < slideCount ? activeSlide + 1 : 1" class="inline-block text-gray-700 hover:text-lime-500")
-                  svg(width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg")
-                    path(d="M7.59998 16H24.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round")
-                    path(d="M16 7.59998L24.4 16L16 24.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round")
-      
-      
-      -->
       <div>
         <div>
           <section>
@@ -388,26 +341,29 @@
                 <div class="w-1/2 xs:w-1/3 px-4 mb-8 xs:mb-0">
                   <h3 class="mb-6 font-bold">Platform</h3>
                   <ul>
-                    <li class="mb-4"><a class="inline-block text-[#ffffff] hover:text-slate-900 font-medium" href="#!">Solutions</a></li>
-                    <li class="mb-4"><a class="inline-block text-[#ffffff] hover:text-slate-900 font-medium" href="#!">How it works</a></li>
-                    <li><a class="inline-block text-[#ffffff] hover:text-slate-900 font-medium" href="#!">Pricing</a></li>
+                    <li class="mb-4"><a class="inline-block text-[#ffffff] hover:text-slate-900 font-medium" href="pricing.html">Solutions</a></li>
+                    <li class="mb-4"><a class="inline-block text-[#ffffff] hover:text-slate-900 font-medium" href="blog.html">How it works</a></li>
+                    <!--lia(class="inline-block text-[#ffffff] hover:text-slate-900 font-medium" href="pricing.html") Pricing
+                    -->
                   </ul>
                 </div>
                 <div class="w-1/2 xs:w-1/3 px-4 mb-8 xs:mb-0">
                   <h3 class="mb-6 font-bold">Resources</h3>
                   <ul>
-                    <li class="mb-4"><a class="inline-block text-[#ffffff] hover:text-slate-900 font-medium" href="#!">Blog</a></li>
-                    <li class="mb-4"><a class="inline-block text-[#ffffff] hover:text-slate-900 font-medium" href="#!">Help Center</a></li>
-                    <li><a class="inline-block text-[#ffffff] hover:text-slate-900 font-medium" href="#!">Support</a></li>
+                    <li class="mb-4"><a class="inline-block text-[#ffffff] hover:text-slate-900 font-medium" href="blog.html">Blog</a></li>
+                    <!--li(class="mb-4")a(class="inline-block text-[#ffffff] hover:text-slate-900 font-medium" href="contact.html") Help Center
+                    -->
+                    <li><a class="inline-block text-[#ffffff] hover:text-slate-900 font-medium" href="contact.html">Support</a></li>
                   </ul>
                 </div>
                 <div class="w-full xs:w-1/3 px-4">
                   <h3 class="mb-6 font-bold">Company</h3>
                   <ul>
-                    <li class="mb-4"><a class="inline-block text-[#ffffff] hover:text-slate-900 font-medium" href="#!">About</a></li>
-                    <li class="mb-4"><a class="inline-block text-[#ffffff] hover:text-slate-900 font-medium" href="#!">Our Mission</a></li>
-                    <li class="mb-4"><a class="inline-block text-[#ffffff] hover:text-slate-900 font-medium" href="#!">Careers</a></li>
-                    <li><a class="inline-block text-[#ffffff] hover:text-slate-900 font-medium" href="#!">Contact</a></li>
+                    <li class="mb-4"><a class="inline-block text-[#ffffff] hover:text-slate-900 font-medium" href="about.html">About</a></li>
+                    <li class="mb-4"><a class="inline-block text-[#ffffff] hover:text-slate-900 font-medium" href="blog.html">Our Mission</a></li>
+                    <!--li(class="mb-4")a(class="inline-block text-[#ffffff] hover:text-slate-900 font-medium" href="blog.html") Careers
+                    -->
+                    <li><a class="inline-block text-[#ffffff] hover:text-slate-900 font-medium" href="contact.html">Contact</a></li>
                   </ul>
                 </div>
               </div>
